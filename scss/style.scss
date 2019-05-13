@@ -1,0 +1,83 @@
+
+$cCalculator: #DCD;
+$cOperButton: #EDD;
+$cNumButton: #FEE;
+$cButtonText: #323;
+$cButtonHover: #CBB;
+$cButtonActive: #BAA;
+$cDisplayPanel: #545;
+$cDisplayText: #FEF;
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #B77;
+}
+
+#calculatorDiv{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 21em;
+  height: auto;
+  padding: 2em;
+  margin-top: 3em;
+  background-color: $cCalculator;
+}
+
+#displayPanel {
+  width: 100%;
+  height: 6em;
+  background-color: $cDisplayPanel;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#displayTextMain {
+  color: $cDisplayText;
+  font-size: 4em;
+  margin: 0 0.2em 0 0;
+}
+
+#displayTextSequence {
+  color: $cDisplayText;
+  font-size: 1em;
+  margin: 0 1em -0.3em 0;
+  padding: 0.3em 0 0 0;
+}
+
+#buttonsDiv{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 21em;
+  margin: 1.5em auto auto auto;
+}
+
+.calcButton {
+  font-weight: bold;
+  font-size: 2em;
+  width: 2.5em;
+  height: 2em;
+  border: none;
+  outline: none;
+  color: $cButtonText;
+  &:hover{
+    background-color: $cButtonHover;
+  }
+  &:active{
+    background-color: $cButtonActive;
+  }
+}
+
+.numButton {
+  background-color: $cNumButton;
+}
+
+.operButton {
+  background-color: $cOperButton;
+}
