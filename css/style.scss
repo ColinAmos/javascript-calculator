@@ -8,6 +8,11 @@ $cButtonActive: #BAA;
 $cDisplayPanel: #545;
 $cDisplayText: #FEF;
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -20,7 +25,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 21em;
-  height: auto;
+  height: 28.5em;
   padding: 2em;
   margin-top: 3em;
   background-color: $cCalculator;

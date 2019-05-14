@@ -1,16 +1,34 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #B77;
 }
 
 #calculatorDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 21em;
-  height: auto;
+  height: 28.5em;
   padding: 2em;
   margin-top: 3em;
   background-color: #DCD;
@@ -20,10 +38,19 @@ body {
   width: 100%;
   height: 6em;
   background-color: #545;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #displayTextMain {
@@ -40,10 +67,18 @@ body {
 }
 
 #buttonsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   height: 21em;
   margin: 1.5em auto auto auto;
 }
@@ -57,9 +92,11 @@ body {
   outline: none;
   color: #323;
 }
+
 .calcButton:hover {
   background-color: #CBB;
 }
+
 .calcButton:active {
   background-color: #BAA;
 }
@@ -71,3 +108,4 @@ body {
 .operButton {
   background-color: #EDD;
 }
+/*# sourceMappingURL=style.css.map */
