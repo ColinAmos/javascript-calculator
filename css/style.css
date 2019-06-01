@@ -103,6 +103,7 @@ body {
   border: none;
   outline: none;
   color: #323;
+  text-align: center;
 }
 
 .calcButton:hover {
